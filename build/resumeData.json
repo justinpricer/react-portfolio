@@ -1,0 +1,139 @@
+{
+  "main": {
+    "name": "Justin Pricer",
+    "occupation": "Full Stack Developer & Student",
+    "description": "Full Stack Developer by Day, Husband & Father by Night",
+    "image": "jp.jpeg",
+    "bio": "My name is Justin and I'm a Student working towards becoming a Full Stack Developer.",
+    "contactmessage": "Get in touch with me.",
+    "email": "justin.pricer@gmail.com",
+    "phone": "512.987.8673",
+    "address": {
+      "street": "1521 Huckleberry Lane",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78748"
+    },
+    "website": "Resume",
+    "resumedownload": "https://drive.google.com/file/d/1WNER-G8hyLyhcFOnwqEjToGnXN7bZwjw/view?usp=sharing",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/justinpricer28",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/justin-pricer/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/raddadinthecity/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/justinpricer",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Written and verbal communication, Customer service professional with the ability to work independently, time and task management, organization, comfort with technology, and specific knowledge of remote communication tools like Zoom, Skype, Dropbox, Google Suite, etc.",
+    "education": [
+      {
+        "school": "University of Texas Pan-American",
+        "degree": "Bachelors in English",
+        "graduated": "Decemeber 2008",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "Barefoot Mosquito",
+        "title": "Team Member",
+        "years": "March 2020 - November 2020",
+        "description": "Customer Service Professional"
+      },
+      {
+        "company": "United States Army",
+        "title": "Clinic Supervisor",
+        "years": "October 2010 - April 2015",
+        "description": "Combat Medic & OB/GYN Supervisor"
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML5",
+        "level": "100%"
+      },
+      {
+        "name": "CSS",
+        "level": "75%"
+      },
+      {
+        "name": "React",
+        "level": "50%"
+      },
+      {
+        "name": "Javascript",
+        "level": "55%"
+      },
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "MySQL",
+        "level": "55%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Austin Food Trucks",
+        "category": "App for Austin Based food trucks",
+        "image": "showcase.jpg",
+        "url": "https://atxfoodtruck.herokuapp.com/"
+      },
+      {
+        "title": "FoodiesUnite",
+        "category": "Calorie tracker and meal finder",
+        "image": "homePage.PNG",
+        "url": "https://justinpricer.github.io/foodiesUnite/"
+      },
+      {
+        "title": "Employee Directory",
+        "category": "User Directory built with ReactJS",
+        "image": "user.png",
+        "url": "https://justinpricer.github.io/react-employee-directory/"
+      },
+      {
+        "title": "Portfolio",
+        "category": "Portfolio I created with React",
+        "image": "port.png",
+        "url": ""
+      },
+      {
+        "title": "Coming soon",
+        "category": "Coming soon",
+        "image": "placeholder.png",
+        "url": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Justin Pricer is the sweetest and most caring person I have ever had the pleasure of knowing.",
+        "user": "Ariel Livingston"
+      },
+      {
+        "text": "My dad is the greatest dad in the history of all the dads that have ever dadded.",
+        "user": "Madison Pricer"
+      }
+    ]
+  }
+}

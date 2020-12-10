@@ -1,18 +1,23 @@
-
+/*
+ * jQuery FlexSlider v2.2.0
+ * Copyright 2012 WooThemes
+ * Contributing Author: Tyler Smith
+ */
 ;
 (function ($) {
 
-  
+  //FlexSlider: Object Instance
   $.flexslider = function(el, options) {
     var slider = $(el);
 
-    
+    // making variables public
     slider.vars = $.extend({}, $.flexslider.defaults, options);
 
     var namespace = slider.vars.namespace,
         msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
         touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch) && slider.vars.touch,
-        
+        // depricating this idea, as devices are being released with both of these events
+        //eventType = (touch) ? "touchend" : "click",
         eventType = "click touchend MSPointerUp",
         watchedEvent = "",
         watchedEventClearTimer,
@@ -24,14 +29,14 @@
         methods = {},
         focused = true;
 
-    
+    // Store a reference to the slider object
     $.data(el, "flexslider", slider);
 
-    
+    // Private slider methods
     methods = {
       init: function() {
         slider.animating = false;
-        
+        // Get current slide and make sure it is a number
         slider.currentSlide = parseInt( ( slider.vars.startAt ? slider.vars.startAt : 0) );
         if ( isNaN( slider.currentSlide ) ) slider.currentSlide = 0;
         slider.animatingTo = slider.currentSlide;
@@ -40,19 +45,19 @@
         slider.slides = $(slider.vars.selector, slider);
         slider.container = $(slider.containerSelector, slider);
         slider.count = slider.slides.length;
-        
+        // SYNC:
         slider.syncExists = $(slider.vars.sync).length > 0;
-        
+        // SLIDE:
         if (slider.vars.animation === "slide") slider.vars.animation = "swing";
         slider.prop = (vertical) ? "top" : "marginLeft";
         slider.args = {};
-       
+        // SLIDESHOW:
         slider.manualPause = false;
         slider.stopped = false;
-        
+        //PAUSE WHEN INVISIBLE
         slider.started = false;
         slider.startTimeout = null;
-        
+        // TOUCH/USECSS:
         slider.transitions = !slider.vars.video && !fade && slider.vars.useCSS && (function() {
           var obj = document.createElement('div'),
               props = ['perspectiveProperty', 'WebkitPerspective', 'MozPerspective', 'OPerspective', 'msPerspective'];
